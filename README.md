@@ -45,7 +45,7 @@ Each must have '<b>v</b>' (version) in float
 
 <b>'mongo'</b> (Mongodb)
 
-Only <b>'gui'</b> option available is <b>'phpmyadmin'</b> for 'maria'
+Only <b>'gui'</b> option available is <b>'phpmyadmin'</b> for <b>'maria'</b>
 
 <b>'dbuser'</b> and <b>'dbname'</b> for both DB are optional, by default it will be <b>'admin'</b> and <b>'main\_db'</b>
 
@@ -53,8 +53,8 @@ Only <b>'gui'</b> option available is <b>'phpmyadmin'</b> for 'maria'
 
 <b>'domains'</b> options:
 
-<b>'wp'</b>
+<b>'wp'</b> (not available in this version)
 
-<b>'django'</b>
+<b>'django'</b> (not available in this version)
 
-Can be <b>empty</b> (will install HTML file with 'The site is under construction')
+Can be <b>empty</b> (will install empty HTML file)
