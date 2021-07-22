@@ -1,18 +1,21 @@
 import sys, os, subprocess
 
 try:
-    import json, paramiko, random, csv
+    import json, paramiko, random
     from scp import SCPClient
+    from fpdf import FPDF
 except ImportError:
     subprocess.call(["pip3", "install", json])
     subprocess.call(["pip3", "install", paramiko])
     subprocess.call(["pip3", "install", scp])
     subprocess.call(["pip3", "install", random])
-    subprocess.call(["pip3", "install", csv])
+    subprocess.call(["pip3", "install", fpdf])
 
 FILENAME = "settings_secret.json"
 FILE = open(FILENAME, "r+")
 SETTINGS = json.load(FILE)
+
+
 class Serve:
     def __init__(self, index):
         self.index = index
