@@ -11,8 +11,6 @@ You HAVE to write ONLY the ROOT pass (<b>'root\_pass'</b>) for server, other pas
 
 <b>'password\_format'</b> options: <b>'txt'</b> (simple txt file) and <b>'pdf'</b> (fancy file with logo).
 
-<b>'password\_format'</b> value must be list. If empty creates 'txt' file by default (if not empty and 'txt' not mentioned, does not creates 'txt').
-
 ### NEW
 
 For new installation delete <b>'user\_pass'</b>'s value (but not the key!) - if exist already means that the script already had been executed and created a new user. It will skip the create new user part.
