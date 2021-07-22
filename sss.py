@@ -40,27 +40,27 @@ class Serve:
 
     # main method
     def make(self):
-        #self.create_new_user()
-        # self.put_files_on_server(self.sh_files)
-        # if len(self.files) > 0:
-        #    self.put_files_on_server(self.files)
-        # self.firewall()
-        # self.update()
-        # self.install_apps()
-        # self.fail2ban()
-        # self.update()
-        # self.install_all_langs()
-        # self.update()
-        # self.install_server()
-        # self.install_db()
-        # self.update()
-        # self.install_all_domains()
-        # self.update()
-        # self.install_misc()
-        # self.update()
-        # self.reboot_server()
+        self.create_new_user()
+        self.put_files_on_server(self.sh_files)
+        if len(self.files) > 0:
+           self.put_files_on_server(self.files)
+        self.firewall()
+        self.update()
+        self.install_apps()
+        self.fail2ban()
+        self.update()
+        self.install_all_langs()
+        self.update()
+        self.install_server()
+        self.install_db()
+        self.update()
+        self.install_all_domains()
+        self.update()
+        self.install_misc()
+        self.update()
+        self.reboot_server()
         self.generate_final_file()
-        #self.mail_final_file()
+        self.mail_final_file()
 
     #ssh methods
     def ssh(self, root: bool):
